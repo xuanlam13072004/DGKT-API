@@ -97,3 +97,95 @@ Trạng Thái: ✅ Thành công
 
 Kết quả sau khi kiểm thử:
 ![image](https://github.com/user-attachments/assets/a02d4785-bef2-4a5a-9ee0-361970ee4f28)
+
+Kịch Bản Kiểm Thử Lần 5:
+Tên Kịch Bản: Kiểm tra phản hồi trạng thái của trang chủ API
+
+Mục Đích: Kiểm tra xem trang chủ của API JSONPlaceholder phản hồi thành công với mã trạng thái 200 hay không
+
+Phương Thức HTTP: GET
+
+URL: https://jsonplaceholder.typicode.com/
+
+Kết Quả Mong Đợi: Server phản hồi mã trạng thái 200 OK
+
+Kết Quả Thực Tế: Server phản hồi 200 OK trong 124ms, test script kiểm tra trạng thái đã pass: Status is 200
+
+Trạng Thái: ✅ Thành công
+
+Kết quả sau khi kiểm thử:
+![image](https://github.com/user-attachments/assets/7d99a91b-d166-429f-bcdf-e6f239a1d76f)
+
+Kịch Bản Kiểm Thử Lần 6:
+Tên Kịch Bản: Tạo bài viết mới và kiểm tra phản hồi chi tiết
+
+Mục Đích: Kiểm tra việc gửi POST để tạo bài viết mới và xác minh phản hồi trả về đúng mã trạng thái và có chứa trường id
+
+Phương Thức HTTP: POST
+
+URL: https://jsonplaceholder.typicode.com/posts
+
+Kết Quả Mong Đợi: Server phản hồi mã 201 Created, và dữ liệu trả về phải có trường "id"
+
+Kết Quả Thực Tế:
+
+Mã phản hồi: 201 Created
+
+Thời gian phản hồi: 981 ms
+
+Các kiểm thử trong tab Scripts:
+
+✅ Status is 201
+
+✅ Response has ID
+
+Trạng Thái: ✅ Thành công
+
+Kết quả sau khi kiểm thử:
+![image](https://github.com/user-attachments/assets/d8859562-9db9-42fb-b547-d35dd056e47e)
+
+Kịch Bản Kiểm Thử Lần 7:
+Tên Kịch Bản: Cập nhật bài viết bằng phương thức PUT và xác minh phản hồi
+
+Mục Đích: Kiểm tra server có phản hồi đúng với mã trạng thái 200 OK khi thực hiện cập nhật bài viết hay không
+
+Phương Thức HTTP: PUT
+
+URL: https://jsonplaceholder.typicode.com/posts/1
+
+Kết Quả Mong Đợi: Server phản hồi 200 OK và test script xác nhận trạng thái đúng
+
+Kết Quả Thực Tế:
+
+Server phản hồi mã 200 OK sau 1.27 giây
+
+Test script "Status is 200" đã PASS
+
+Trạng Thái: ✅ Thành công
+
+Kết quả sau khi kiểm thử:
+![image](https://github.com/user-attachments/assets/ffe1f135-4c98-46af-b5cc-da79f485c84a)
+
+Kịch Bản Kiểm Thử Lần 8:
+Tên Kịch Bản: Xoá bài viết và xác minh phản hồi 200 hoặc 204
+
+Mục Đích: Kiểm tra phản hồi từ server khi thực hiện yêu cầu xoá tài nguyên, với khả năng chấp nhận cả mã trạng thái 200 hoặc 204
+
+Phương Thức HTTP: DELETE
+
+URL: https://jsonplaceholder.typicode.com/posts/1
+
+Kết Quả Mong Đợi: Server phản hồi mã 200 OK hoặc 204 No Content tùy vào cách xử lý, và script xác minh trạng thái phản hồi hợp lệ
+
+Kết Quả Thực Tế:
+
+Server phản hồi mã 200 OK trong 847ms
+
+Test script "Status is 200 or 204" đã PASS
+
+Trạng Thái: ✅ Thành công
+
+Kết quả sau khi kiểm thử:
+![image](https://github.com/user-attachments/assets/123b9998-3830-4e48-8b26-a66c133b125e)
+
+
