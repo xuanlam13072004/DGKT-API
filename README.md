@@ -6,41 +6,8 @@ Người Kiểm Thử: Nguyễn Xuân Lam
 
 GIỚI THIỆU
 
-🧩 Postman là gì? Postman là một công cụ giao diện đồ họa (GUI) phổ biến giúp lập trình viên và tester làm việc với API (Application Programming Interface) một cách dễ dàng. Nó hỗ trợ gửi các yêu cầu HTTP và nhận phản hồi từ server, từ đó giúp bạn kiểm thử API, mô phỏng API, và tự động hóa kiểm thử.
+Postman là một công cụ giao diện đồ họa phổ biến giúp lập trình viên và kiểm thử viên làm việc với API dễ dàng hơn. Với Postman, người dùng có thể gửi các yêu cầu HTTP như GET, POST, PUT và DELETE để kiểm tra hoạt động của API, đồng thời xem chi tiết phản hồi từ server như mã trạng thái, tiêu đề và nội dung trả về. Ngoài ra, Postman cho phép viết các đoạn mã JavaScript nhỏ trong tab Tests để tự động kiểm tra dữ liệu phản hồi có đúng định dạng hay không, giúp phát hiện lỗi nhanh chóng. Người dùng cũng có thể tổ chức các yêu cầu API thành các bộ sưu tập (collections), chạy kiểm thử hàng loạt bằng Collection Runner, mô phỏng server khi backend chưa sẵn sàng, và tích hợp với hệ thống CI/CD thông qua công cụ dòng lệnh Newman để chạy và xuất báo cáo kiểm thử tự động. Nhờ giao diện thân thiện và tính năng mạnh mẽ, Postman trở thành công cụ không thể thiếu trong quá trình phát triển và kiểm thử phần mềm hiện đại.
 
-🔧 Postman dùng để làm gì? Gửi yêu cầu HTTP: Gửi các loại yêu cầu như:
-
-GET – Lấy dữ liệu
-
-POST – Gửi dữ liệu mới
-
-PUT – Cập nhật dữ liệu
-
-DELETE – Xoá dữ liệu
-
-Xem phản hồi từ server: Bao gồm:
-
-Mã trạng thái (200, 404, 500…)
-
-Header
-
-Body (dạng JSON, HTML, XML…)
-
-Viết kiểm thử tự động: Dùng JavaScript để viết test script trong tab Tests, nhằm kiểm tra:
-
-Mã trạng thái
-
-Nội dung JSON
-
-Định dạng, thời gian phản hồi
-
-Tổ chức các yêu cầu thành Collection: Giúp quản lý các nhóm API của một dự án lớn và chia sẻ với nhóm khác.
-
-Chạy kiểm thử tự động hàng loạt (Collection Runner) Có thể chạy nhiều API liên tục và báo cáo kết quả test.
-
-Mô phỏng server bằng Mock Server Mô phỏng phản hồi từ API khi backend chưa sẵn sàng.
-
-Tích hợp CI/CD và xuất báo cáo test Dùng kết hợp với Newman để chạy Postman script trong pipeline.
 
 1. Mục Tiêu Kiểm Thử: Sử dụng Postman để kiểm thử một API thực tế
 
